@@ -7,6 +7,7 @@ import { loginComponent } from './login/login.component';
 import { RegisterComponent } from './Register/register.component';
 import { UserComponent } from './user/user.component';
 import { AwsComponent } from './cloudProviders/aws/aws.component';
+import { GcpComponent } from './cloudProviders/gcp/gcp.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AwsComponent } from './cloudProviders/aws/aws.component';
     loginComponent,
     RegisterComponent,
     UserComponent,
-    AwsComponent
+    AwsComponent,
+    GcpComponent
   ],
   imports: [
     BrowserModule,
