@@ -8,6 +8,7 @@ import { RegisterComponent } from './Register/register.component';
 import { UserComponent } from './user/user.component';
 import { AwsComponent } from './cloudProviders/aws/aws.component';
 import { GcpComponent } from './cloudProviders/gcp/gcp.component';
+import { AzureComponent } from './cloudProviders/azure/azure.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GcpComponent } from './cloudProviders/gcp/gcp.component';
     RegisterComponent,
     UserComponent,
     AwsComponent,
-    GcpComponent
+    GcpComponent,
+    AzureComponent
   ],
   imports: [
     BrowserModule,
