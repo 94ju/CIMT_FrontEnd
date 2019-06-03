@@ -9,6 +9,7 @@ import { UserComponent } from './user/user.component';
 import { AwsComponent } from './cloudProviders/aws/aws.component';
 import { GcpComponent } from './cloudProviders/gcp/gcp.component';
 import { AzureComponent } from './cloudProviders/azure/azure.component';
+import { AdminUserComponent } from './admin-user/admin-user.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AzureComponent } from './cloudProviders/azure/azure.component';
     UserComponent,
     AwsComponent,
     GcpComponent,
-    AzureComponent
+    AzureComponent,
+    AdminUserComponent
   ],
   imports: [
     BrowserModule,
