@@ -10,7 +10,11 @@ import { AwsComponent } from './cloudProviders/aws/aws.component';
 import { GcpComponent } from './cloudProviders/gcp/gcp.component';
 import { AzureComponent } from './cloudProviders/azure/azure.component';
 import { AdminUserComponent } from './admin-user/admin-user.component';
-
+import {  Routes, RouterModule } from '@angular/router';
+const appRoutes:Routes=[
+  {path:'register',component:RegisterComponent},
+  {path:'login',component:loginComponent}
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +28,8 @@ import { AdminUserComponent } from './admin-user/admin-user.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
