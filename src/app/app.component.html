@@ -12,14 +12,14 @@
             <ul class="nav nav-tabs">
                 <li role="presentation"><a >Home</a></li>
                 <li role="presentation"><a >Servers</a></li>
-                <li role="presentation"><a >AWS</a></li>
-                <li role="presentation"><a >GCP</a></li>
-                <li role="presentation"><a >Azure</a></li>
+                <li role="presentation"><a routerLink="aws/" >AWS</a></li>
+                <li role="presentation"><a routerLink="gcp/">GCP</a></li>
+                <li role="presentation"><a routerLink="azure/" >Azure</a></li>
             </ul>
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-        </div>
-        </div>
+        
+              <router-outlet></router-outlet>
+         
+        
     </div>
 </div>
