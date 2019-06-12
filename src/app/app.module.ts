@@ -13,13 +13,15 @@ import { AdminUserComponent } from './admin-user/admin-user.component';
 import {  Routes, RouterModule } from '@angular/router';
 import { UploadComponent } from './user/upload/upload.component';
 import { HomeComponent } from './home/home.component';
+import { CloudProvidersComponent } from './cloudProviders/cloudProviders.component';
 const appRoutes:Routes=[
   {path:'register',component:RegisterComponent},
   {path:'login',component:loginComponent},
   {path:'aws',component:AwsComponent},
   {path:'gcp',component:GcpComponent},
   {path:'azure',component:AzureComponent},
-  {path:'home',component:HomeComponent}
+  {path:'home',component:HomeComponent},
+  {path:'servers',component:CloudProvidersComponent}
 ];
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ const appRoutes:Routes=[
     AzureComponent,
     AdminUserComponent,
     UploadComponent,
-    HomeComponent
+    HomeComponent,
+    CloudProvidersComponent
   ],
   imports: [
     BrowserModule,
