@@ -15,6 +15,7 @@ import { UploadComponent } from './user/upload/upload.component';
 import { HomeComponent } from './home/home.component';
 import { CloudProvidersComponent } from './cloudProviders/cloudProviders.component';
 import { EditUserComponent } from './user/edit-user/edit-user.component';
+import { ReactiveFormsModule } from '@angular/forms';
 const appRoutes:Routes=[
   {path:'register',component:RegisterComponent},
   {path:'login',component:loginComponent},
@@ -42,7 +43,8 @@ const appRoutes:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
