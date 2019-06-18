@@ -14,6 +14,7 @@ import {  Routes, RouterModule } from '@angular/router';
 import { UploadComponent } from './user/upload/upload.component';
 import { HomeComponent } from './home/home.component';
 import { CloudProvidersComponent } from './cloudProviders/cloudProviders.component';
+import { EditUserComponent } from './user/edit-user/edit-user.component';
 const appRoutes:Routes=[
   {path:'register',component:RegisterComponent},
   {path:'login',component:loginComponent},
@@ -35,7 +36,8 @@ const appRoutes:Routes=[
     AdminUserComponent,
     UploadComponent,
     HomeComponent,
-    CloudProvidersComponent
+    CloudProvidersComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,
