@@ -33,6 +33,29 @@
                  *ngIf="!editUserForm.get('jobtitle').valid && editUserForm.get('jobtitle').touched"
                  class="help-block">Please enter valid job title !</span>
             </div>
+            <div formArrayName="cloudVendors">
+                <h4>Cloud Vendors Used before</h4>
+                <button 
+                  class="btn btn-default"
+                  type="button" 
+                  style="background-color: rgb(62, 87, 85); color:white;"
+                  (click)="onAddVendor()"
+                 >Add Vendor</button>
+              <div
+                class="form-group"
+                *ngFor="let vendor of editUserForm.get('cloudVendors').controls; let i =index"
+                >
+              <input 
+                type="text"
+                class="form-control"
+                [formControlName]="i"
+               >
+              </div>
+               
+                <!-- <span
+                *ngIf="!editUserForm.get('team').valid && editUserForm.get('team').touched"
+                class="help-block">Please enter valid team vendor!</span> -->
+            </div>
             <div class="form-group">
               <label>Team Name</label>
                 <input 
@@ -43,6 +66,7 @@
                 *ngIf="!editUserForm.get('team').valid && editUserForm.get('team').touched"
                 class="help-block">Please enter valid team name!</span>
             </div>
+           
             <button class="btn btn-primary" type="submit">Submit</button>
           </form>
         </div>
