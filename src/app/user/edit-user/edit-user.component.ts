@@ -21,6 +21,7 @@ export class EditUserComponent implements OnInit {
   }
   onSubmit(){
     console.log(this.editUserForm);
+    this.editUserForm.reset();
   }
   onAddVendor(){
     const control= new FormControl(null,Validators.required);
